@@ -8,4 +8,5 @@ module.exports = function reverse (n) {
   } else if (n < 0 && Number(temp) > 0 && n < Number(temp)){
     return Number(temp);
   }
+  return (n < 0 && Number(temp) > 0) ? Number(temp)*(-1) : Number(temp);
 }
